@@ -18,7 +18,8 @@
 }
 
 @media (max-width:768px) {
-  .eisenhower-matrix { text-align: center;
+  .eisenhower-matrix {
+    text-align: center;
   }
 }
 .main-section {
@@ -38,10 +39,13 @@ ul {
   margin: 0;
   padding: 0px;
 }
-.list-item, .title-todo, .title-completed {
+.list-item,
+.title-todo,
+.title-completed {
   list-style: none;
 }
-.btn, input {
+.btn,
+input {
   outline: none;
 }
 .btn {
