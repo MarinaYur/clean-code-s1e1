@@ -133,16 +133,16 @@ input {
 }
 
 /* Completed */
-.label-completed {
+ #completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item input[type=text] {
+.list-item input[type="text"] {
   display: none;
 }
-.edit-mode input[type=text] {
+.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
