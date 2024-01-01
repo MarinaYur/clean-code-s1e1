@@ -33,20 +33,20 @@ var createNewTaskElement=function(taskString){
   var deleteButtonImg=document.createElement("img");//delete button image
 
   label.innerText=taskString;
-  label.className="task list-item-label";
-  listItem.className = "list-item";
+  label.className="task tasks__label";
+  listItem.className = "tasks__list-item";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
   editInput.type="text";
-  editInput.className="task task-input";
-  checkBox.className = "li-item-checkbox"
+  editInput.className="task tasks__input-text";
+  checkBox.className = "tasks__checkbox"
 
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className="edit btn";
+  editButton.className="tasks__btn tasks__btn_edit";
 
-  deleteButton.className="delete btn";
-  deleteButtonImg.className = "del-img";
+  deleteButton.className="tasks__btn tasks__btn_delete";
+  deleteButtonImg.className = "tasks__del-img";
   deleteButtonImg.src="./remove.svg";
   deleteButtonImg.setAttribute("alt", "Delete icon");
   deleteButton.appendChild(deleteButtonImg);
@@ -88,7 +88,7 @@ var editTask=function(){
 
   var editInput=listItem.querySelector("input[type=text]");
   var label=listItem.querySelector("label");
-  var editBtn=listItem.querySelector(".edit");
+  var editBtn=listItem.querySelector(".tasks__btn_edit");
   var containsClass=listItem.classList.contains("edit-mode");
 
   //If class of the parent is .editmode
@@ -163,8 +163,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
 //select ListItems children
   var checkBox=taskListItem.querySelector("input[type=checkbox]");
-  var editButton=taskListItem.querySelector("button.edit");
-  var deleteButton=taskListItem.querySelector("button.delete");
+  var editButton=taskListItem.querySelector("button.tasks__btn_edit");
+  var deleteButton=taskListItem.querySelector("button.tasks__btn_delete");
 
 
   //Bind editTask to edit button.
