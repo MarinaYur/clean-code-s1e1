@@ -4,6 +4,9 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+.h1none {
+  display: none;
+}
 .eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
@@ -22,7 +25,7 @@
     text-align: center;
   }
 }
-.main-section {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
